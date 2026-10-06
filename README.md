@@ -1,2 +1,2 @@
 # Digital Privacy 
-Fronted website project done!!!
+Privora - A modern digital privacy awareness and protection frontend website built with HTML, CSS, and JavaScript 
