@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privora | Digital Privacy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <span>Privora</span>
+    </div>
+
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#scanner">Scanner</a>
+        <a href="#tips">Tips</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            <span class="pulse"></span>
+            Your privacy matters
+        </div>
+
+        <h1>
+            Take Control of
+            <span>Your Digital Privacy.</span>
+        </h1>
+
+        <p>
+            Understand your online privacy, identify digital risks,
+            and build safer browsing habits with Privora.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#scanner" class="btn primary">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Check My Privacy
+            </a>
+
+            <a href="#privacy" class="btn secondary">
+                Learn More
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <div class="orb"></div>
+
+        <div class="shield-card">
+
+            <div class="shield">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>Privacy Protected</h3>
+
+            <p>Your digital environment looks healthy.</p>
+
+            <div class="security-bar">
+                <span></span>
+            </div>
+
+            <div class="security-score">
+                <strong id="heroScore">82%</strong>
+                <small>Privacy Score</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat-card">
+        <i class="fa-solid fa-user-shield"></i>
+        <div>
+            <h2 id="usersProtected">12,840</h2>
+            <p>Users Protected</p>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <i class="fa-solid fa-bug-slash"></i>
+        <div>
+            <h2 id="threatsBlocked">48,291</h2>
+            <p>Threats Identified</p>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <i class="fa-solid fa-cookie-bite"></i>
+        <div>
+            <h2>73%</h2>
+            <p>Trackers Reduced</p>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <i class="fa-solid fa-lock"></i>
+        <div>
+            <h2>99.9%</h2>
+            <p>Secure Sessions</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= PRIVACY DASHBOARD ================= -->
+
+<section class="section" id="privacy">
+
+    <div class="section-heading">
+
+        <span>PRIVACY DASHBOARD</span>
+
+        <h2>
+            Know your <span>privacy status.</span>
+        </h2>
+
+        <p>
+            Monitor important areas that affect your online privacy.
+        </p>
+
+    </div>
+
+
+    <div class="dashboard">
+
+        <!-- SCORE -->
+
+        <div class="score-card">
+
+            <div class="score-circle">
+
+                <svg viewBox="0 0 120 120">
+
+                    <circle
+                        class="circle-bg"
+                        cx="60"
+                        cy="60"
+                        r="50">
+                    </circle>
+
+                    <circle
+                        class="circle-progress"
+                        id="scoreCircle"
+                        cx="60"
+                        cy="60"
+                        r="50">
+                    </circle>
+
+                </svg>
+
+                <div class="score-number">
+                    <strong id="privacyScore">82</strong>
+                    <span>/100</span>
+                </div>
+
+            </div>
+
+            <h3>Good Privacy</h3>
+
+            <p>
+                Your privacy protection is stronger than average.
+            </p>
+
+            <button class="btn primary small" id="improveBtn">
+                Improve Score
+            </button>
+
+        </div>
+
+
+        <!-- PRIVACY CHECKS -->
+
+        <div class="checks-card">
+
+            <div class="check-item">
+
+                <div class="check-icon green">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="check-info">
+                    <h4>HTTPS Protection</h4>
+                    <p>Secure connection detected</p>
+                </div>
+
+                <span class="status safe">Safe</span>
+
+            </div>
+
+
+            <div class="check-item">
+
+                <div class="check-icon orange">
+                    <i class="fa-solid fa-cookie"></i>
+                </div>
+
+                <div class="check-info">
+                    <h4>Tracking Cookies</h4>
+                    <p>Some tracking cookies detected</p>
+                </div>
+
+                <span class="status warning">Warning</span>
+
+            </div>
+
+
+            <div class="check-item">
+
+                <div class="check-icon green">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+
+                <div class="check-info">
+                    <h4>Password Security</h4>
+                    <p>Your password habits look good</p>
+                </div>
+
+                <span class="status safe">Safe</span>
+
+            </div>
+
+
+            <div class="check-item">
+
+                <div class="check-icon red">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div class="check-info">
+                    <h4>Location Sharing</h4>
+                    <p>Location access may expose data</p>
+                </div>
+
+                <span class="status danger">Risk</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SCANNER ================= -->
+
+<section class="scanner-section" id="scanner">
+
+    <div class="scanner-container">
+
+        <div class="section-heading">
+
+            <span>PRIVACY SCANNER</span>
+
+            <h2>
+                Scan your <span>digital footprint.</span>
+            </h2>
+
+            <p>
+                Run a simulated privacy check and discover possible
+                digital risks.
+            </p>
+
+        </div>
+
+
+        <div class="scanner-box">
+
+            <div class="scanner-input">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <input
+                    type="text"
+                    id="websiteInput"
+                    placeholder="Enter website e.g. example.com">
+
+                <button id="scanBtn" class="btn primary">
+                    Scan
+                </button>
+
+            </div>
+
+
+            <div class="scan-result" id="scanResult">
+
+                <div class="scan-icon">
+                    <i class="fa-solid fa-shield"></i>
+                </div>
+
+                <h3>Ready to scan</h3>
+
+                <p>
+                    Enter a website above to start your privacy scan.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRIVACY FEATURES ================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span>PRIVACY PROTECTION</span>
+
+        <h2>
+            Build better <span>digital habits.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-fingerprint"></i>
+            </div>
+
+            <h3>Digital Footprint</h3>
+
+            <p>
+                Understand how your online activities create
+                a digital footprint.
+            </p>
+
+            <a href="#tips">
+                Learn more
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-user-lock"></i>
+            </div>
+
+            <h3>Account Privacy</h3>
+
+            <p>
+                Strengthen your accounts with better passwords
+                and security practices.
+            </p>
+
+            <a href="#tips">
+                Learn more
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-eye-slash"></i>
+            </div>
+
+            <h3>Stop Tracking</h3>
+
+            <p>
+                Learn how trackers collect information and
+                reduce unnecessary tracking.
+            </p>
+
+            <a href="#tips">
+                Learn more
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+
+            <h3>Device Privacy</h3>
+
+            <p>
+                Protect personal information stored on your
+                phone and computer.
+            </p>
+
+            <a href="#tips">
+                Learn more
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRIVACY TIPS ================= -->
+
+<section class="tips-section" id="tips">
+
+    <div class="section-heading">
+
+        <span>PRIVACY TIPS</span>
+
+        <h2>
+            Small changes. <span>Better privacy.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+        <div class="tip">
+            <span>01</span>
+            <div>
+                <h3>Use strong passwords</h3>
+                <p>
+                    Create unique passwords for important accounts.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="tip">
+            <span>02</span>
+            <div>
+                <h3>Enable two-factor authentication</h3>
+                <p>
+                    Add an extra security layer to your accounts.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="tip">
+            <span>03</span>
+            <div>
+                <h3>Review app permissions</h3>
+                <p>
+                    Remove permissions that apps don't actually need.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="tip">
+            <span>04</span>
+            <div>
+                <h3>Think before sharing</h3>
+                <p>
+                    Avoid sharing sensitive personal information publicly.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div>
+
+        <span>YOUR DATA. YOUR CONTROL.</span>
+
+        <h2>
+            Privacy isn't a luxury.
+            <br>
+            <strong>It's a right.</strong>
+        </h2>
+
+        <p>
+            Start protecting your digital identity today.
+        </p>
+
+        <button class="btn primary" id="secureBtn">
+            <i class="fa-solid fa-shield-halved"></i>
+            Secure My Privacy
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        <div class="logo-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+
+        <span>Privora</span>
+    </div>
+
+    <p>
+        © 2026 Privora. Digital privacy awareness project.
+    </p>
+
+    <div class="socials">
+
+        <a href="#">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- TOAST -->
+
+<div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Privacy settings updated!</span>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
